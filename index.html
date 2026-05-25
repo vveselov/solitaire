@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Косынка</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <div>
+          <h1>Косынка</h1>
+          <p id="status">Разложите все карты по мастям от туза до короля.</p>
+        </div>
+        <div class="controls">
+          <button id="new-game" type="button" title="Новая партия">Новая партия</button>
+          <button id="draw-mode" type="button" title="Переключить режим добора">Добор: 1</button>
+        </div>
+      </header>
+
+      <section class="board" aria-label="Игровое поле">
+        <div class="top-row">
+          <div class="stock-area">
+            <div id="stock" class="pile stock" data-pile="stock" aria-label="Колода"></div>
+            <div id="waste" class="pile waste" data-pile="waste" aria-label="Сброс"></div>
+          </div>
+          <div id="foundations" class="foundations" aria-label="Фундаменты"></div>
+        </div>
+
+        <div id="tableau" class="tableau" aria-label="Стол"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
